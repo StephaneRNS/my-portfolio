@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio de René Stéphane</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #667eea, yellow); 
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, red, green);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: #555;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .projet, .certificat {
+      background-color: #eee;
+      padding: 20px;
+      margin-top: 15px;
+      border-radius: 10px;
+    }
+
+    .competences {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .competences span {
+      background-color: #dfe6e9;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .social-icons {
+      margin-top: 15px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+    }
+#cv, #blog {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.btn-cv {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #667eea;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-cv:hover {
+  background-color: #5a60d3;
+}
+
+.blog-post {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.blog-post h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      font-family: serif;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+  
+</head>
+<body onclick="changerCouleurFond(this)">
+
+  <header>
+    <img src="image/profil.jpg" alt="Photo de profil" align="left" />
+    <h1>René Stéphane<br><center>TIAVINIAINA</center></h1>
+    <p>Développeur web en devenir | Passionné de technologie</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/StephaneRNS" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">À propos</a>
+    <a href="#competences">Compétences</a>
+    <a href="#certificats">Certificats</a>
+    <a href="#projets">Projets</a>
+    <a href="#cv">Mon cv</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="accueil">
+    <h2>Bienvenue !</h2>
+    <p>Je suis étudiant en informatique à la CNTEMAD Antsirabe, amateur de volley-ball, passionné par le développement web, les jeux vidéo, la musique rap, l'intelligence artificielle et la création de projets innovants.</p>
+  </section>
+
+  <section id="apropos">
+    <h2>À propos de moi</h2>
+    <p>J'aime créer des choses utiles, apprendre des technologies modernes et collaborer avec d'autres développeurs pour construire le futur du web.</p>
+  </section>
+
+  <section id="competences">
+    <h2>Mes Compétences</h2>
+    <div class="competences">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Git & GitHub</span>
+      <span>Responsive Design</span>
+    </div>
+  </section>
+
+  <section id="certificats">
+    <h2>Certificats</h2>
+    <div class="certificat">
+      <h3>Introduction à l'Intelligence Artificielle</h3>
+      <p>Plateforme : OpenAI Learn</p>
+    </div>
+    <div class="certificat">
+      <h3>Développement Web Débutant</h3>
+      <p>Plateforme : Codecademy / FreeCodeCamp</p>
+    </div>
+  </section>
+
+  <section id="projets">
+    <h2>Mes projets</h2>
+    <div class="projet">
+      <h3>Mini-profil interactif</h3>
+      <p>Une petite page de profil animée en HTML, CSS et JavaScript.</p>
+    </div>
+    <div class="projet">
+      <h3>Clash Dashboard</h3>
+      <p>Un concept de tableau de bord inspiré de Clash of Clans (à venir).</p>
+    </div>
+  </section>
+
+
+<section id="cv">
+  <h2>📄 Mon CV</h2>
+  <p>Vous pouvez consulter ou télécharger mon CV en cliquant ci-dessous :</p>
+  <a href="cv_rene_stephane.pdf" download class="btn-cv">Télécharger mon CV</a>
+</section>
+
+<section id="blog">
+  <h2>📝 Mon Blog</h2>
+
+  <article class="blog-post">
+    <h3>Comment j’ai commencé le développement web sans PC</h3>
+    <p>
+      Tout a commencé avec mon téléphone Android. J’ai utilisé Acode, GitHub Mobile, et ChatGPT pour apprendre à coder en HTML/CSS/JS. J’ai créé un portfolio et un projet inspiré de Clash of Clans. La passion et la motivation peuvent surmonter n’importe quel obstacle !  
+    </p>
+  </article>
+
+  <article class="blog-post">
+    <h3>Pourquoi l’intelligence artificielle me passionne</h3>
+    <p>
+      L’IA m’inspire car elle transforme nos vies : jeux, réseaux sociaux, assistants, etc. J’aimerais l’intégrer à mes projets web pour personnaliser les expériences. Un jour, je souhaite créer ma propre IA et participer à l’évolution du web intelligent.
+    </p>
+  </article>
+</section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📧 Email : renestephanerns@gmail.com</p>
+    <p>📱 WhatsApp : +261 37 78 318 16</p>
+    <p>    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a> Facebook : René Štéph&auml;ne</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 René Stéphane TIAVINIAINA – Tous droits réservés</p>
+  </footer>
+
+  <script>
+    function changerCouleurFond(el) {
+      const couleurs = ['#ff7675', 'aqua', '#74b9ff', '#55efc4', '#ffeaa7', '#fab1a0', 'linear-gradient(to right, #667eea, #764ba2)'];
+      const index = Math.floor(Math.random() * couleurs.length);
+      document.body.style.background = couleurs[index];
+    }
+  </script>
+</body>
+</html>
